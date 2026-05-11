@@ -6,9 +6,9 @@ import time
 import yfinance as yf
 from pgdb import PGDatabase
 
-
+dirname = os.path.dirname(__file__)
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(os.path.join(dirname, 'config.ini'))
 #print(config['Files']['sales_path'])
 
 companies = eval(config['Companies']['companies'])
