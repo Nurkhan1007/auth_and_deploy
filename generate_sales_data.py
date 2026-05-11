@@ -16,7 +16,7 @@ today_weekday = datetime.today().weekday()
 
 yesterday = today - timedelta(days=1)
 
-if 1<=today_weekday<=5:
+if 1<=today_weekday<=6:
     d = {
         'dt': [yesterday.strftime('%d-%m-%Y')] * len(companies) * 2,
         'company': companies * 2, 
